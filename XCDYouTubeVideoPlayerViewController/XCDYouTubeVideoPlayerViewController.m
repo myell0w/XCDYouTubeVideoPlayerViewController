@@ -81,10 +81,11 @@ static void *MoviePlayerKey = &MoviePlayerKey;
 		return;
 	
 	_videoIdentifier = [videoIdentifier copy];
-	
-	self.elFields = [[NSMutableArray alloc] initWithArray:@[ @"embedded", @"detailpage", @"vevo", @"" ]];
-	
-	[self startVideoInfoRequest];
+
+    if (_videoIdentifier != nil) {
+        self.elFields = [[NSMutableArray alloc] initWithArray:@[ @"embedded", @"detailpage", @"vevo", @"" ]];
+        [self startVideoInfoRequest];
+    }
 }
 
 - (void) presentInView:(UIView *)view
