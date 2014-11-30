@@ -66,6 +66,7 @@ NSString *const XCDYouTubeVideoUserInfoKey = @"Video";
 	if (!self)
 		return nil;
 	
+	// See https://github.com/0xced/XCDYouTubeKit/commit/cadec1c3857d6a302f71b9ce7d1ae48e389e6890
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidEnterBackgroundNotification object:nil];
 	
 	if (videoIdentifier)
@@ -97,7 +98,8 @@ NSString *const XCDYouTubeVideoUserInfoKey = @"Video";
         return;
     }
 
-	self.videoOperation = [[XCDYouTubeClient defaultClient] getVideoWithIdentifier:videoIdentifier completionHandler:^(XCDYouTubeVideo *video, NSError *error) {
+	self.videoOperation = [[XCDYouTubeClient defaultClient] getVideoWithIdentifier:videoIdentifier completionHandler:^(XCDYouTubeVideo *video, NSError *error)
+	{
 		if (video)
 		{
 			NSURL *streamURL = nil;
