@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20D64E61A94B3DC000AE868 /* libXCDYouTubeKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EDD2EC1805917900BEA32B /* libXCDYouTubeKit.a */; };
 		C2428AE5191C3C1400065504 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2428AE4191C3C1400065504 /* AppDelegate.m */; };
 		C2428AE8191C3C1400065504 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2428AE6191C3C1400065504 /* MainMenu.xib */; };
 		C2428AEA191C3C1400065504 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2428AE9191C3C1400065504 /* Images.xcassets */; };
@@ -30,10 +31,9 @@
 		C27415E517F4D0330026834B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27415E417F4D0330026834B /* MediaPlayer.framework */; };
 		C27AD2A11A0791F000866050 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27AD2A01A0791F000866050 /* Images.xcassets */; };
 		C2BA376D192AB32200B27FAD /* MPMoviePlayerController+BackgroundPlayback.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BA376C192AB32200B27FAD /* MPMoviePlayerController+BackgroundPlayback.m */; };
+		C2C5D2981A6E5AB900F2B3F8 /* VideoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C5D2971A6E5AB900F2B3F8 /* VideoPickerController.m */; };
 		C2DDFAF419C2CEB000E7DB66 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2DDFAF319C2CEB000E7DB66 /* LaunchScreen.xib */; };
 		C2EFB48718730A2B0046B1FE /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EFB48618730A2B0046B1FE /* SettingsViewController.m */; };
-		C2F0E59F1945065C00D8EBA8 /* XCDYouTubeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F0E59E1945065C00D8EBA8 /* XCDYouTubeKit.framework */; };
-		C2F0E5A11945069300D8EBA8 /* XCDYouTubeKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C2F0E59E1945065C00D8EBA8 /* XCDYouTubeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,17 +44,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C26231B7191D7F8500D23900 /* XCDYouTubeKit.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C2F0E5A01945068200D8EBA8 /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C2F0E5A11945069300D8EBA8 /* XCDYouTubeKit.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +89,8 @@
 		C27AD2A01A0791F000866050 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C2BA376B192AB32200B27FAD /* MPMoviePlayerController+BackgroundPlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPMoviePlayerController+BackgroundPlayback.h"; sourceTree = "<group>"; };
 		C2BA376C192AB32200B27FAD /* MPMoviePlayerController+BackgroundPlayback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPMoviePlayerController+BackgroundPlayback.m"; sourceTree = "<group>"; };
+		C2C5D2961A6E5AB900F2B3F8 /* VideoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPickerController.h; sourceTree = "<group>"; };
+		C2C5D2971A6E5AB900F2B3F8 /* VideoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPickerController.m; sourceTree = "<group>"; };
 		C2DDFAF319C2CEB000E7DB66 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		C2EDD2EC1805917900BEA32B /* libXCDYouTubeKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libXCDYouTubeKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EFB48518730A2B0046B1FE /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
@@ -122,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2F0E59F1945065C00D8EBA8 /* XCDYouTubeKit.framework in Frameworks */,
+				C20D64E61A94B3DC000AE868 /* libXCDYouTubeKit.a in Frameworks */,
 				C27415E317F4D02E0026834B /* AVFoundation.framework in Frameworks */,
 				C27415A617F491230026834B /* CoreGraphics.framework in Frameworks */,
 				C27415A417F491230026834B /* Foundation.framework in Frameworks */,
@@ -207,6 +198,8 @@
 				C2570B851A02415F00127127 /* NowPlayingInfoCenterProvider.m */,
 				C27415C317F4CDD80026834B /* DemoFullScreenViewController.h */,
 				C27415C417F4CDD80026834B /* DemoFullScreenViewController.m */,
+				C2C5D2961A6E5AB900F2B3F8 /* VideoPickerController.h */,
+				C2C5D2971A6E5AB900F2B3F8 /* VideoPickerController.m */,
 				C27415C517F4CDD80026834B /* DemoInlineViewController.h */,
 				C27415C617F4CDD80026834B /* DemoInlineViewController.m */,
 				C27415C717F4CDD80026834B /* DemoThumbnailViewController.h */,
@@ -263,7 +256,6 @@
 				C274159A17F491230026834B /* Sources */,
 				C274159B17F491230026834B /* Frameworks */,
 				C274159C17F491230026834B /* Resources */,
-				C2F0E5A01945068200D8EBA8 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -343,6 +335,7 @@
 				C27415D317F4CDD80026834B /* DemoAsynchronousViewController.m in Sources */,
 				C2630D3F1935C449000D3917 /* PlayerEventLogger.m in Sources */,
 				C27415D417F4CDD80026834B /* DemoFullScreenViewController.m in Sources */,
+				C2C5D2981A6E5AB900F2B3F8 /* VideoPickerController.m in Sources */,
 				C27415D517F4CDD80026834B /* DemoInlineViewController.m in Sources */,
 				C27415D617F4CDD80026834B /* DemoThumbnailViewController.m in Sources */,
 				C27415DC17F4CDD80026834B /* main.m in Sources */,
@@ -451,7 +444,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2.0.3;
+				CURRENT_PROJECT_VERSION = 2.1.2;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -485,7 +478,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 2.0.3;
+				CURRENT_PROJECT_VERSION = 2.1.2;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = "NS_BLOCK_ASSERTIONS=1";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -514,6 +507,7 @@
 					"-Wl,-U,_JSGlobalContextCreate",
 					"-Wl,-U,_JSGlobalContextRelease",
 					"-Wl,-U,_JSObjectCallAsFunction",
+					"-Wl,-U,_JSObjectGetPrototype",
 					"-Wl,-U,_JSObjectIsFunction",
 					"-Wl,-U,_JSObjectSetProperty",
 					"-Wl,-U,_JSStringCopyCFString",
@@ -544,6 +538,7 @@
 					"-Wl,-U,_JSGlobalContextCreate",
 					"-Wl,-U,_JSGlobalContextRelease",
 					"-Wl,-U,_JSObjectCallAsFunction",
+					"-Wl,-U,_JSObjectGetPrototype",
 					"-Wl,-U,_JSObjectIsFunction",
 					"-Wl,-U,_JSObjectSetProperty",
 					"-Wl,-U,_JSStringCopyCFString",
